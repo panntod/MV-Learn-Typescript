@@ -1,9 +1,9 @@
-class Person {
+export class Person {
     // private id: number;
     // name: string;
 
     // tidak perlu mendeskripsikan id dan name karena sudah dideklarasikan di constructor
-    constructor(private id: number, private name: string) {
+    constructor(private readonly id: number, public name: string) {
         // this.id = id;
         // this.name = name;
     }
