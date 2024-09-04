@@ -4,7 +4,16 @@ class Departement {
     constructor(n: string) {
         this.name = n;
     }
+
+    describe(this: Departement) {
+        console.log('Departement: ' + this.name);
+    }
 }
 
 const accounting = new Departement('Accounting');
-console.log(accounting);
+
+accounting.describe(); // Departement: Accounting
+
+const accountingCopy = { describe: accounting.describe };
+
+accountingCopy.describe(); // Error: TypeError: this.describe
