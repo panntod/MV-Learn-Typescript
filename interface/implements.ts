@@ -1,8 +1,6 @@
-// Memanggil interface dari file lain
-import { Person } from "./person";
+import { Person } from "./person";  // Memanggil interface dari file lain
 
-// Membuat class Student yang mengimplementasikan interface Person
-class Student implements Person {
+class Student implements Person {   // Membuat class Student yang mengimplementasikan interface Person
     firstName: string;
     lastName: string;
     age: number;
@@ -18,18 +16,15 @@ class Student implements Person {
     }
 }
 
-// Membuat instance dari class Student
-let student1: Person = new Student("John", "Doe", 25);
-student1.greet("Hello"); // Output: Hello, John Doe
+let student1: Person = new Student("John", "Doe", 25); // Membuat instance dari class Student
+student1.greet("Hello");                               // Output: Hello, John Doe
 
-// Membuat interface Employee yang meng-extend interface Person
-interface Employee extends Person {
+interface Employee extends Person { // Membuat interface Employee yang meng-extends interface Person
     salary: number;
     department: string;
 }
 
-// Membuat interface yang readonly
-interface ReadOnlyPerson {
+interface ReadOnlyPerson {          // Membuat interface yang readonly
     readonly firstName: string;
     readonly lastName: string;
     readonly age: number;

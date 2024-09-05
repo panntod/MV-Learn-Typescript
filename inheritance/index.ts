@@ -23,6 +23,6 @@ class Employee extends Person {
 
 const rivaldo = new Employee(1, 'Rivaldo', 'Software Engineer');
 
-rivaldo.describe(); // Mahasiswa dengan id: 1, dengan nama: Rivaldo
-rivaldo.setPosition = 'Software Engineer';
-console.log(rivaldo.printPosition); // Software Engineer  
+rivaldo.describe();                                     // Mahasiswa dengan id: 1, dengan nama: Rivaldo
+rivaldo.setPosition = 'Software Engineer';              // Digunakan untuk menset nilai position
+console.log(rivaldo.printPosition);                     // Digunakan untuk mendapatkan nilai position

@@ -12,8 +12,10 @@ class Departement {
 
 const accounting = new Departement('Accounting');
 
-accounting.describe(); // Departement: Accounting
+accounting.describe();              // Departement: Accounting
 
-const accountingCopy = { describe: accounting.describe };
+const accountingCopy = { 
+    describe: accounting.describe 
+};
 
-accountingCopy.describe(); // Error: TypeError: this.describe
+accountingCopy.describe();          // Error: TypeError: this.describe
